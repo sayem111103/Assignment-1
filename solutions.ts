@@ -83,12 +83,12 @@ class Student extends Person {
   }
 
   getDetails() {
-    console.log(`Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`);
+    return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`;
   }
 }
 
 const student = new Student("Alice", 20, "A");
-student.getDetails();
+console.log(student.getDetails());
 
 //Problem 7
 const getIntersection = (arr1: number[], arr2: number[]): number[] => {
